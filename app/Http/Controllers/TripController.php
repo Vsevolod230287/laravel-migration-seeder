@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers;       // i controller
 
 use Illuminate\Http\Request;
-use App\Trip;
+use App\Trip;              //i model
 
 class TripController extends Controller
 {

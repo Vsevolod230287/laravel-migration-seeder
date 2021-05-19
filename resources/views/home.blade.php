@@ -2,5 +2,9 @@
 
 
 @section('main')
-{{var_dump($trips)}}
+@foreach ($trips as $trip)
+<ul>
+  <li>{{$trip}}</li>
+</ul>
+@endforeach
 @endsection
