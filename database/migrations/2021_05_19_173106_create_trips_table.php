@@ -11,10 +11,10 @@ class CreateTripsTable extends Migration
         Schema::create('trips', function (Blueprint $table) {
             $table->id();
             $table->string('paese', 30);
-            $table->string('città', 30);
-            $table->tinyInteger('durata');
+            $table->string('citta', 30);
+            $table->tinyInteger('durata')->unsigned();
             $table->boolean('all_inclusive');
-            $table->smallInteger('prezzo');
+            $table->smallInteger('prezzo')->unsigned();
             $table->timestamps();
         });
     }

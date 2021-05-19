@@ -9,7 +9,7 @@ class UpdateTripsTable extends Migration
     public function up()
     {
         Schema::table('trips', function (Blueprint $table) {
-            $table->date('partenza')->after('all_inclusive');
+            $table->date('partenza')->after('all_inclusive')->nullable();
         });
     }
 
